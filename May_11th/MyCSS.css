@@ -1,0 +1,18 @@
+h1 {
+background-color:red;
+text-align:center;
+}
+
+.myDiv {
+background-color:yellow;
+text-align:center;
+}
+
+/* -- Comments in Stylesheet --- */
+
+/*
+#myID {
+background-color:blue;
+text-align:center;
+}
+*/
