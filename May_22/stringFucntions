@@ -1,0 +1,55 @@
+var x=10;
+
+var x='raghu';
+
+var x='10';
+
+var x="10";
+
+This is Raghu's System
+
+
+var x='This is Raghu's System';
+alert(x) ==> ?
+This is Raghu
+
+var x="This is Raghu's System";
+alert(x) ==> This is Raghu's System
+
+
+var x='raghu';
+x.length ==> Number (number of charaters in that string)
+x.length ==> 5
+
+var x = 'raghu kiran';
+x.length = 11
+
+var length = 10;
+var var=10;
+
+
+var x='This is Raghu's System';
+alert(x) ==> This is Raghu
+
+Escape characters:
+if there are any special characters in the string, and they'll be terminating the string, then we use escape characters
+
+(\) ==> backslash
+
+var x='This is Raghu\'s System';
+var y="This is Raghu's System";
+alert(x) ==> This is Raghu's System
+
+var x='This is Raghu\\s System';
+alert(x) ==> This is Raghu\s System
+
+
+
+
+
+
+
+
+
+
+
