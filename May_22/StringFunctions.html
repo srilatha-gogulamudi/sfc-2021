@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>String Functions</title>
+<script>
+function getTextBoxName(){
+
+var x= document.getElementById("txtName").value;
+var y= document.getElementById("txtCity").value;
+var z=x+"," + " "+y;
+var a=x+", "+y;
+var b=document.getElementById("txtName").value + ", " + document.getElementById("txtCity").value;
+//alert(b);
+alert(document.getElementById("txtName").value + ", " + document.getElementById("txtCity").value);
+alert(x.length);
+alert("The length of "+x+ " is " +x.length);
+//The length of Raghu is 5
+}
+
+function changeName(){
+var x="Kiran";
+document.getElementById("txtName").value=document.getElementById("txtCity").value;
+}
+
+function changeButtonText(){
+	var x="My Button";
+	document.getElementById("btn2").innerHTML=x;
+}
+</script>
+</head>
+<body>
+Enter Name: <input type="text" id="txtName" /><br />
+Enter City: <input type="text" id="txtCity" /><br />
+<button type="button" onclick="getTextBoxName();">Click Me</button><br />
+
+<button id="btn2" type="button" onclick="changeName();">Click Me to Change Name</button><br />
+
+<button type="button" onclick="changeButtonText();">Click Me to Change Button Text</button><br />
+</body>
+</html>
