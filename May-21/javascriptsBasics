@@ -1,0 +1,66 @@
+Javascript Object:
+
+Car:
+
+Properties: specify something
+Wheels:4
+Name:Alto
+Weight:1000kg
+Color:White
+Variant:LXI
+
+
+Actions: (Methods) : perform some task
+Start
+Stop
+Drive
+Brake
+
+var x=10;
+var name='raghu';
+var wheel=4;
+var name='alto';.....
+
+var myCar={name:'alto',wheels:4,weight:1000;color:'white'} ==> Objects
+
+var x=10;
+x ==> 10;
+
+var myCar={name:'alto',wheels:4,weight:1000;color:'white'}
+myCar.name ==> alto
+myCar.Name ==> undefined
+myCar.wheels ==> 4
+myCar.color ==> white
+myCar["color"] ==> white
+
+Javascript Events:
+Events are something that can be applied to HTML elements
+
+Button: 
+Click event ==> invoke a function and that will execute some logic
+<button id="myBtn" onclick="event or function_name">Click</button>
+
+Load event:
+window.onload = function_name; 
+
+Dropdown ==> on selection of an option ==> selection change in the dropdown
+<select id="myDropdown" onchange="function_name">
+	<option>Option 1</option>
+	<option>Option 2</option>
+	<option>Option 3</option>
+</select>
+
+
+onclick
+Events:
+onchange
+onload
+onkeydown
+onkeyup
+onkeypress
+onmouseover
+onmouseout
+
+
+
+
