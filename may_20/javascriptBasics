@@ -1,0 +1,216 @@
+var x=10;
+
+var x='raghu';
+
+Comments:
+1. Single line comment
+// var x=10; (will not be considered)
+
+2. Multi line comment
+/*
+lines
+lines
+lines
+*/
+
+Javascript Operators:
+var x=1;
+var y=2;
+var z=x+y;
+
+'=' ==> assignment operator (used to assign some value)
+'+' ==> addition operator (in case of numbers, it will like normal addition)
+(in case of strings, it will work as a concatenation opertor)
+var x='raghu';
+var y='kiran';
+var z=x+y; z=raghukiran;
+'*' ==> multiplication operator 
+'/' ==> performs division 
+5/2 ==> 2 or 2.5
+'%' ==> modulus operator (it returns remainder)
+5%2 ==> 1
+
+var x=1;
+x=x+1;
+x=? (2)
+
+x=x+1; or x+=1;
+
+x+=5; ==> x=x+5;
+
+Comparision Operators (used for Comparision or condition checking)
+1. '==' ==> used to check whether left hand element and right hand elements are equal or not. It always returns boolean value
+var x=5;
+var y=10;
+x==y ==>false;
+
+var x='raghu';
+var y='raghu';
+x==y ==> true;
+
+2. '!=' (not equal)
+var x=5;
+var y=10;
+x!=y ==> true
+
+3. '>' (greater than)
+var x=5;
+var y=10;
+x>y ==> false
+
+4. '<' (less than)
+var x=5;
+var y=10;
+x<y ==> true
+
+5. '>=' (greater than or equal to)
+var x=5;
+var y=10;
+x>=y ==> false
+
+var x=5;
+var y=5;
+x>=y ==> true
+
+6. '<=' (less than or equal to)
+var x=1;
+var y=1;
+x<=y ==> true
+
+7. '?' (terenary opertor)
+condition ? result1 : result 2
+if the condition returns true, result1 will be excuted
+if the condition returns false, result2 will be excuted
+var x=1;
+var y=1;
+x<=y ? 5 : 10; ==> 5
+
+var x=1;
+var y=2;
+x>=y ? 5 : 10; ==> 10
+
+
+Logical Operators
+1. '&&' (logical and) ==> used to check two conditions at time and returns true only if BOTH the conditions are true
+var x=1;
+var y=2;
+x==1 && y == 2 ==> true
+true    true       true
+
+x==1 && y != 2 ==> false
+true    false      false
+
+2. '||' (logical or) ==> used to check two conditions at time and returns true if any ONE of the conditions is true
+var x=1;
+var y=2;
+x==1 || y == 2 ==> true
+x==1 || y != 2 ==> true
+x!=1 || y!= 2  ==> false
+
+3. '!' (local not) ==> returns opposite of the condition. This is used along with boolean result
+var x=false;
+!x ==> true;
+
+Javascript Functions:
+Function is a block of code used to perform some action or operations. this will be invoked whenever some operation is performed  on a control
+
+<button type="button" onclick="functionname()">Click</button>
+
+Syntax:
+function functionname(){
+logic
+logic
+logic
+}
+
+function functionname(parameter1, parameter2,....){
+logic
+logic
+logic
+}
+
+
+function functionname(){
+logic
+logic
+logic
+return someresult;
+}
+
+function addNum(v1,v2){
+var x=v1+v2;
+var x=1+2;=>3
+x=3;
+
+return x; (will be last point of execution)
+
+asdfasd
+asdfasdasdfasdf
+asdfasdf
+
+return 3;
+}
+
+var y=addNum(1,2);
+y=3;
+
+function addNum(){
+var x=1;
+var y=2;
+var z=x+y;
+
+return z;
+}
+
+var myVal1 = addNum();
+var myVal2 = addNum();
+
+
+=============================
+
+function addNum(v1,v2){
+var z=v1+v2;
+return z;
+}
+
+var myVal1 = addNum(1,2);
+
+var myVal2 = addNum('raghu','kiran');
+
+================================
+
+function addNum(v1,v2){
+var z=v1+v2;
+return z;
+}
+
+z = undefined
+
+v1 & v2 ==> parameters
+z       ==> local parameter (scope is within that function only)
+=========================
+var x=10; Global variable
+var y=20; Global variable
+
+function addNum(v1,v2){
+x=v1+v2;
+//return x;
+}
+
+var myval = addNum(10,20);
+function addNum(10,20){
+x=10+20;
+x=30;
+}
+
+x = ?
+x=10 Correct?
+x=20
+x=30 Correct Value
+
+
+
+
+
+
+
