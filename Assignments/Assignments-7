@@ -1,0 +1,10 @@
+1. Add 2 text boxes in the page
+2. Add a button
+3. On button click (using javascript), interchange the values of the the Text Boxes
+4. On button click (using javascript), 
+interchange the Labels of the the Text Boxes
+
+
+Hint:
+1. Make use of span tag
+2. Make use of innerHTML
