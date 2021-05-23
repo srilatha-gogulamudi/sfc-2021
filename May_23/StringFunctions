@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>String Functions</title>
+<script>
+function getTextBoxName(){
+//var x="that is  is from my text";
+//x.indexOf(string);
+//"is"
+//var y="if";
+ //alert(x.indexOf("ist"));
+ 
+ ////Javascript position starts with "0"
+ //indexOf(sometext) it returns the position of the first occurence
+ 
+ //return -1 (if the text does not exist)
+ //return the index of that string
+ 
+ var x=document.getElementById("txtName").value;
+ var y=document.getElementById("txtCity").value;
+ 
+ alert(x.indexOf(y));
+}
+
+function getLastIndex(){
+var x="that is  is from my text";
+//x.indexOf(string);
+ alert(x.lastIndexOf("is"));
+ alert(x.length);
+ 
+ //lastIndexOf ==> return -1 if the text does not exist
+ //lastIndexOf ==> return the position of the last occurance
+}
+
+function getPartialText(){
+//var x="thattext is  is from my text";
+var x="my string";
+//x.slice(starting position, ending postion);
+//this will return the portion from 0 to 3 (4-1)
+//alert(x.slice(0,4));
+alert(x.length);//Length starts with 1, //9
+alert(x.slice(0,x.length));//x.slice(0,9-1)//from 0 until 8 characters
+alert(x.slice(6,-2));//slice accepts negative numbers
+}
+
+function getSubString(){
+var x="my string";
+//x.substring(starting postion, ending postion);
+alert(x.length);
+alert(x.substring(0,x.length));
+//substring accepts only positive numbers
+alert(x.substring(2,-2));
+}
+
+function myReplaceFunction(){
+var x="this is my text";
+alert(x);
+//var y=x.replace();//first parameter = search string. second parameter = to be replaced string
+var y=x.replace("my","his");
+alert(y);
+}
+
+function myCaseFunction(){
+var x="this is my text";
+alert(x);
+var y=x.toUpperCase();
+alert(y); // this will convert the complete text to upper Case
+var z=y.toLowerCase();
+alert(z);
+}
+
+</script>
+</head>
+<body>
+Enter Name: <input type="text" id="txtName" /><br />
+Enter City: <input type="text" id="txtCity" /><br />
+<button type="button" onclick="getTextBoxName();">Click Me</button><br />
+
+<button type="button" onclick="getLastIndex();">Last Button</button><br />
+
+<button type="button" onclick="getPartialText();">Slice Button</button><br />
+
+<button type="button" onclick="getSubString();">SubString Button</button><br />
+<button type="button" onclick="myReplaceFunction();">Replace Button</button><br />
+
+<button type="button" onclick="myCaseFunction();">Change Case Button</button><br />
+
+</body>
+</html>
