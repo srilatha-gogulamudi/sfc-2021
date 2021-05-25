@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function myFunction(){
+ var x="a,b,c,d,e";
+ 
+ var age=10;
+ var newage=20;
+ 
+ var z=age+newage;
+ 
+ alert(x);//a,b,c,d,e
+ 
+ console.log(z);
+ 
+ alert(x[0]);//a
+ //asdfasdfd
+ //split method==> based upon the seperator, it will be converted into an array
+ var y=x.split(',');
+ //y=['a','b','c','d','e'];
+ y=['a','b','c','d','e'];
+ alert(y.length);
+}
+</script>
+</head>
+<body>
+<button onclick="myFunction()">Click Me</button>
+</body>
+</html>

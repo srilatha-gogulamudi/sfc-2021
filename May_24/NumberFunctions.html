@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+function myFunction(){
+ var x=10;
+ var y=20;
+ //alert(x+y);
+ //alert("The value is: "+ x+y);
+ 
+ var z=x+y;
+ //alert("The value is: "+ z);
+ 
+ var a=z;
+ //alert(typeof(a));
+ 
+ var b="10";
+ //alert(typeof( parseInt(b)));//parseInt ==> used to convert the parameter to Integer / number
+ 
+ var c=10;
+ //alert(typeof(c));
+ //alert(typeof(c.toString()));
+ 
+ //parseFloat(c) ==> converted to a float value
+ 
+ var d=9.7248;
+ //alert(typeof(d));
+ //alert(d.toFixed(0)); //==> return only the number before decimal
+ alert(d.toFixed(2));
+}
+</script>
+</head>
+<body>
+<button onclick="myFunction()">Click Me</button>
+</body>
+</html>
