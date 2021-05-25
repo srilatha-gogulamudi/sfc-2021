@@ -1,0 +1,65 @@
+<html>
+<head>
+<script>
+var x=['a','b','c','d'];
+alert(typeof(x));
+//alert(x[0]);
+alert("Datatype: " + Array.isArray(x));
+
+var car={name:"zen",color:"white",weight:1000}
+alert(typeof(car));
+//alert(car.name);
+alert("Datatype: " + Array.isArray(car));
+//x[6]==>
+
+//alert(x);
+
+
+
+//for(var i=0;i<x.length;i++){
+//	alert(x[i]);
+//}
+
+//forEach() ==> work similar to for loop only
+
+//x.forEach(myFunc);
+
+//function myFunc(value){
+//alert(value);
+//}
+
+//alert("First element: " +x[0]);
+
+
+
+//Length = x.length ==> 8
+//Last element == x.length-1
+var b=x.length-1;
+//alert("Last Element: " +x[b]);
+//alert("Last Element: " +x[x.length-1]); //x[7] //g
+
+x.push("h");//push is used to add an element to the array at the last
+//alert("Last Element: " +x[x.length-1]); //x[8] //h
+
+x.pop(); //removes the element at the last position
+//alert("Last Element: " +x[x.length-1]); //x[7] //g
+
+var y=x[0];//a
+
+x[0]='apple'; //==>?
+//alert(x[0]);
+
+//alert(x.length);
+//var z=['d','h','a','c','b'];
+//alert("Initial Array:" +z[0]);
+//var myNewArray = z.sort(); //sort the elements of the array
+//alert("Sorted Array: " + myNewArray[0]);
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
