@@ -1,0 +1,41 @@
+<html>
+<head>
+
+<script>
+function myfunction(){
+//var x=10;
+var x= document.getElementById("myTextContent").value;	//By default, the content in the text box is string datatype
+
+//isNaN() ==> this is used to check whether the entered parameter is an illegal number or not
+//isNaN(x) ==> if the value of x is not a number, that will true, else it will return false
+
+if(isNaN(x)){
+	alert(x + " is a string");
+}
+
+	//if(typeof(x)=="string"){
+//		alert(typeof(x));
+	//}
+}
+</script>
+
+</head>
+<body>
+<input type="text" id="myTextContent"/>
+<button id="myButton" onclick="myfunction()">Click Me</button>
+
+<p>
+Conditions: <br />
+1. if<br />
+<p>
+if(condition) {
+if the contition returns true, then only the internal logic will be executed
+}
+</p>
+2. else<br />
+3. else if<br />
+4. switch<br />
+</p>
+
+</body>
+</html>
