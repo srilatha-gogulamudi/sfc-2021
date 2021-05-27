@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>HTML IFrame</title>
+<script>
+function displayVideo(){
+document.getElementById("myIframe").style.display="block";
+}
+
+function hideVideo(){
+document.getElementById("myIframe").style.display="none";
+}
+</script>
+</head>
+
+<body>
+
+<button type="button" onclick="displayVideo()">Show Video</button>
+<br />
+<br />
+<!--<button type="button" onclick="hideVideo()">Hide Video</button>-->
+<!--<iframe width="350" height="400" src="https://transcripts.gotomeeting.com/#/s/5cbabc443e3477a549d2f0c0bb72457f1e56ee083b6bb8a21369f06764ede4db">	
+</iframe>-->
+
+<iframe id="myIframe" style="display:none" width="956" height="538" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&muted=1&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
