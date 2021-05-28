@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>HTML Storage</title>
+</head>
+<body>
+<button onclick="getUserNameLocalStorage();">Get Data for Local</button>
+<br />
+<button onclick="getUserNameSessionStorage();">Get Data for Session</button>
+
+<br />
+My Name:<input type="text" id="myName"/><br />
+
+My City:<input type="text" id="myCity"/><br />
+
+<p id="myParagraph">
+Using Web Storage, web applications can save the data locally (i.e., within User's Browser)
+<br />
+1. Local Storage: The data will be saved without any expiration time
+<br />localStorage.setItem(param1,param2);
+<br />
+param1: key (which will be accessed later)
+<br />
+param2: value (the data which the user wants to save)
+<br />
+By default, the value will be stored as a string. 
+<br />To retrieve the saved value,localStorage.getItem(param1) --> return the param2
+
+
+2. Session Storage: The data will be available only for 1 session (i.e, the data will be lost once you close the browser tab)
+<br />sessionStorage.setItem(param1,param2);
+<br />
+param1: key (which will be accessed later)
+<br />
+param2: value (the data which the user wants to save)
+<br />
+By default, the value will be stored as a string. 
+<br />
+Note: To remove the value, localStorage.removeItem(param1);
+</p>
+
+<script>
+
+alert("Local storage data: "+localStorage.getItem("userName"));
+alert("Session storage data: "+sessionStorage.getItem("cityName"));
+
+function getUserNameLocalStorage(){
+var x=document.getElementById("myName");
+//alert(x.value);
+
+localStorage.setItem("userName",x.value);
+}
+
+function getUserNameSessionStorage(){
+
+var x=document.getElementById("myCity");
+//alert(x.value);
+localStorage.setItem("userName",x.value);
+sessionStorage.setItem("cityName",x.value);
+}
+
+</script>
+
+</body>
+</html>

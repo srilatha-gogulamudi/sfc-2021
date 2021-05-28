@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>HTML Geolocation</title>
+</head>
+<body>
+<button onclick="getUserLocation();">Get Location</button>
+
+<br />
+Latitude:<input type="text" id="myLatitude"/><br />
+Longitude:<input type="text" id="myLongitude"/>
+
+<p id="myParagraph"></p>
+
+<script>
+var x=document.getElementById("myParagraph");
+
+function getUserLocation(){
+//alert()
+	if(navigator.geolocation){
+	//alert(navigator.geolocation);
+		//navigator.geolocation.getCurrentPosition(parameter);	//parameter is the name of a function
+		navigator.geolocation.getCurrentPosition(myCoordinates,myErrors);
+		//navigator.geolocation.getCurrentPosition(myCoordinates);
+	}
+	else{
+		//x.innerHTML="Geolocation is not supported";
+		document.getElementById("myParagraph").innerHTML="Geolocation is not supported";
+	}
+}
+
+function myCoordinates(position){
+	x.innerHTML = "My Latitude is: "+ position.coords.latitude + " and My Longitude is: " + position.coords.longitude;
+	
+	document.getElementById("myLatitude").value=position.coords.latitude;
+	document.getElementById("myLongitude").value=position.coords.longitude;
+}
+
+function myErrors(error){
+	alert(error.code);
+	
+	if(error.code==1){
+	alert("User denied the permission to access Location");
+	}
+}
+
+</script>
+
+</body>
+</html>
