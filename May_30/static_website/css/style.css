@@ -1,0 +1,115 @@
+/* header bg style */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.custom-header{
+    background-color:#fff;
+    padding:20px;
+}
+.padding-20{ 
+    padding:20px;
+}
+.w-100{
+    width:100%
+}
+.margin-0{
+    margin:0px;
+}
+.custom-ul{
+    float:right;
+    display: flex;
+}
+.custom-ul li{
+    margin-left:20px;
+}
+.custom-ul li a{
+    font-size:20px;
+    color:#000;
+}
+.banner-text h1, .banner-text h2{
+    color:#fff;
+}
+.banner-text{
+    position:absolute;
+    margin-top: -20%;
+    text-align: center;
+}
+.position-relative{
+    position: relative;
+}
+.d-flex{
+    display: flex;
+}
+.section-1{
+    border:1px solid #000;
+    background-color:#efefef;
+    width:200px;
+    height:300px;
+    margin-right:40px;
+}
+.bg-primary{
+    background-color:#ccc
+}
+.justify-content-center{
+    justify-content: center;
+}
+.text-center{
+    text-align:center;
+}
+.custom-ul li{
+    list-style: none;
+}
+.padding-16{
+    padding:16px;
+}
+.fs-45{
+    font-size:45px;
+}
+.mb-0{
+    margin-bottom:0;
+}
+h1, h2, h3, h4, h5, h6{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.about{
+    margin-top:50px;
+    padding-right:60px;
+    padding-left:60px;
+    margin-bottom:50px;
+}
+.reg_btn{
+    background:red;
+    color:#fff;
+    border-radius:6px;
+    padding:6px;
+    margin-top:20px
+}
+.contact h1{
+    margin-top:30px
+}
+.text-uppercsae{
+    text-transform: uppercase;
+}
+footer{
+    background:#ccc;
+    padding:15px;
+}
+footer ul li{
+    list-style: none;
+}
+.input-wrapper{
+    margin-bottom:20px;
+    display:flex
+}
+.reg_div{
+    padding-left:100px;
+}
+.custom-form{
+    background:#ccc;
+    padding:20px;
+    width:400px;
+}
+.input-wrapper label{
+    width:100px;
+}
